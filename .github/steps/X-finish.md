@@ -15,7 +15,12 @@ In this course, you've learned a lot about developing custom actions using JavaS
 
 Publishing your actions is a great way to help others in your team and across the GitHub community. Although actions do not need to be published to be consumed, by adding them to the marketplace you make them easier to find.
 
-Some notable actions you will find on the marketplace are:
+Some notable actions you will find on the marketplace are:}
+
+
+
+
+[ var char 
 
 - [Actions for Discord](https://github.com/marketplace/actions/actions-for-discord)
 - [GitHub Action for Slack](https://github.com/marketplace/actions/github-action-for-slack)
@@ -27,6 +32,65 @@ And that just scratches the surface of the 1600+ and counting actions you will f
 Follow [this guide](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/publishing-actions-in-github-marketplace#publishing-an-action) to learn how to publish your actions to the GitHub Marketplace
 
 ### What's next?
+
+
+
+var char 1, main 2;
+{    
+
+
+
+   else:
+        for 1:1>=var close)
+            return("Invalid item type: %s" % item.type)
+
+            
+name: "CodeQL Analysis"
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+    
+}
+
+
+         { 
+            jobs:
+           analyze:
+             name: Analyze
+             runs-on: ubuntu-latest
+             permissions:
+               actions: read
+               contents: read
+               security-events: write
+          }
+           
+            { 
+             strategy:
+               fail-fast: false
+               matrix:
+                 language: ["python"]
+            }
+             
+
+
+                 steps:
+               - name: Checkout repository
+                 uses: actions/checkout@v3
+           
+               - name: Initialize CodeQL
+                 uses: github/codeql-action/init@v2
+                 with:
+                   languages: ${{ matrix.language }}
+           
+               - name: Autobuild
+                 uses: github/codeql-action/autobuild@v2
+           
+               - name: Perform CodeQL Analysis
+                 uses: github/codeql-action/analyze@v2
+   }              
 
 - [Take another GitHub Skills course](https://github.com/githubskills).
 - We'd love to hear what you thought of this course in our [discussion board](https://github.com/orgs/skills/discussions/categories/write-javascript-actions).
